@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tokio = { version = "1.8.3", features = ["full"] }
+clap = "2.3.8"
+futures = { version = "0.3.*"}
