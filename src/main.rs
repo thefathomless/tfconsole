@@ -1,5 +1,9 @@
 mod rustMap;
 
+
 fn main() {
-    rustMap::rust_scan("10.0.0.120", "5357");
+    let ipaddress = std::env::args().nth(1).expect("no pattern given");
+    let port = std::env::args().nth(2).expect("no path given");
+    //Convert ipaddress to str from Stringl
+    rustMap::rust_scan(&ipaddress, &port);
 }
